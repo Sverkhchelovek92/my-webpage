@@ -63,12 +63,21 @@ body {
   min-height: 100vh;
   justify-content: space-between;
 }
-
+/* 
 footer {
   width: 100%;
   text-align: center;
-}
+} */
+
 .container {
-  max-width: 1200px;
+  max-width: 1800px;
   margin: 0 auto;
+  border: 1px solid black;
+}
+
+.menu-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 70px;
 }
