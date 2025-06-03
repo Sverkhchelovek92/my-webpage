@@ -17,6 +17,8 @@ body {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
+  background: #242424;
+  color: #ffffff;
 }
 
 a {
@@ -63,21 +65,42 @@ body {
   min-height: 100vh;
   justify-content: space-between;
 }
-/* 
+
 footer {
   width: 100%;
   text-align: center;
-} */
+}
 
 .container {
-  max-width: 1800px;
+  max-width: 1000px;
   margin: 0 auto;
-  border: 1px solid black;
+  border: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  /* min-height: 100vh; */
+  margin-top: 20px;
+  background: #2d2d2d;
+}
+
+.poster {
+  width: 100%;
 }
 
 .menu-links {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  padding: 0 70px;
+
+  padding: 0;
+  margin: 0;
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+.menu-link {
+  cursor: pointer;
+}
+
+main {
+  flex: 1;
 }
