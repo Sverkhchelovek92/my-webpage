@@ -60,3 +60,5 @@ const projectsDatabase = [
     img: '10_M.png',
   },
 ]
+
+export default projectsDatabase
