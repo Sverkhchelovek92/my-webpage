@@ -104,3 +104,20 @@ footer {
 main {
   flex: 1;
 }
+
+h1 {
+  font-size: 20px;
+  margin: 10px;
+}
+
+.project-card {
+  margin-bottom: 50px;
+}
+
+.project-name {
+  margin: 10px;
+  font-weight: bold;
+}
+.project-p {
+  margin: 10px;
+}
