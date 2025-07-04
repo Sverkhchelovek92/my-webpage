@@ -69,6 +69,11 @@ body {
 footer {
   width: 100%;
   text-align: center;
+  flex-shrink: 0;
+}
+
+.current-year {
+  margin: 10px;
 }
 
 .container {
@@ -102,7 +107,7 @@ footer {
 }
 
 main {
-  flex: 1;
+  flex-grow: 1;
 }
 
 h1 {
