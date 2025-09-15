@@ -69,6 +69,13 @@ const projectsDatabase = [
     img: '10_M.png',
     gitlink: 'https://github.com/Sverkhchelovek92/Monty-Hall',
   },
+  {
+    id: 11,
+    name: 'Rotating Cube',
+    description: '3D Куб, у которого можно менять цвет и скорость вращения',
+    img: '11_C.png',
+    gitlink: 'https://github.com/Sverkhchelovek92/Rotating-Cube',
+  },
 ]
 
 export default projectsDatabase
