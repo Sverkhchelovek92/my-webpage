@@ -17,7 +17,7 @@ body {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
-  background: #242424;
+  background: #2d2d2d;
   color: #ffffff;
 }
 
@@ -85,6 +85,12 @@ footer {
   /* min-height: 100vh; */
   margin-top: 20px;
   background: #2d2d2d;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .poster {
