@@ -30,7 +30,7 @@ body {
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   background-color: var(--bg-dark);
-  color: #ffffff;
+  color: #66ccff;
 }
 
 a {
@@ -155,18 +155,38 @@ footer {
   object-fit: cover;
 }
 
+.menu {
+  display: flex;
+}
+
 .menu-links {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-
+  width: 100%;
   padding: 0;
   margin: 0;
-  margin: 10px 0;
-  font-size: 18px;
+  list-style: none;
 }
 
 .menu-link {
+  flex: 1;
+  border: 6px solid var(--bg-mid);
+}
+
+.menu-link a {
+  display: block;
+  text-align: center;
+  padding: 20px 0;
+  background-color: var(--bg-mid);
+  color: #66ccff;
+  text-decoration: none;
+  font-family: 'PerfectDOS', monospace;
+  font-size: 1.5rem;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.menu-link a:hover {
+  background-color: #c0c0c0;
+  color: var(--bg-dark);
   cursor: pointer;
 }
 
