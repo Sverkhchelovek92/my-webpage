@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'PerfectDOS';
+  src: url('assets/fonts/Perfect\ DOS\ VGA\ 437\ Win.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 *,
 *::before,
 *::after {
@@ -106,6 +113,7 @@ footer {
   flex-direction: column;
   padding: 20px;
   text-align: center;
+  font-family: 'PerfectDOS', monospace;
 }
 
 .header-text h1 {
