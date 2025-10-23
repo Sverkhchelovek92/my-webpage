@@ -6,7 +6,7 @@ const projectCards = projectsDatabase.map((project) => {
   return `
       <div class="project-card">
       <div class="project-thumb">
-      <img src="images/${project.img}" alt="${project.name}">
+      <img src="images/${project.img}" alt="${project.name}" loading="lazy">
       </div>
         <div class="project-info">
         <h3 class="project-name">${project.name}</h3>
