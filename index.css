@@ -15,6 +15,7 @@
 :root {
   --bg-dark: #01171a;
   --bg-mid: #03303a;
+  --accent: #4cc3ff;
 }
 
 *,
@@ -115,12 +116,14 @@ footer {
 
 .container {
   max-width: 1000px;
+  flex: 1;
   margin: 0 auto;
   border: 1px solid white;
   display: flex;
   flex-direction: column;
   /* min-height: 100vh; */
   margin-top: 20px;
+  margin-bottom: 20px;
   background-color: var(--bg-mid);
   font-family: 'LucidaConsole', monospace;
 }
@@ -258,4 +261,49 @@ h1 {
 .project-link:hover {
   text-decoration: underline;
   color: #face55;
+}
+
+main {
+  margin: 20px;
+}
+
+main h2 {
+  font-family: 'PerfectDOS', monospace;
+  color: var(--accent);
+  font-size: 1.5rem;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  padding-bottom: 5px;
+}
+
+.main-about {
+  margin-bottom: 30px;
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+
+.links {
+  margin-top: 10px;
+}
+
+.links_list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.links_list a {
+  color: var(--accent);
+  text-decoration: none;
+  border: 1px solid var(--accent);
+  padding: 8px 16px;
+  background-color: var(--bg-dark);
+  transition: background-color 0.2s ease;
+}
+
+.links_list a:hover {
+  background-color: var(--accent);
+  color: var(--bg-dark);
 }
