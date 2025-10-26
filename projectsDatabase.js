@@ -76,6 +76,13 @@ const projectsDatabase = [
     img: '11_C.png',
     gitlink: 'https://github.com/Sverkhchelovek92/Rotating-Cube',
   },
+  {
+    id: 12,
+    name: 'Data Visualizer',
+    description: 'Приложение, которое строит графики',
+    img: '12_DV.png',
+    gitlink: 'https://github.com/Sverkhchelovek92/Charts',
+  },
 ]
 
 export default projectsDatabase
