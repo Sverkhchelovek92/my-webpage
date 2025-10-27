@@ -16,6 +16,7 @@
   --bg-dark: #01171a;
   --bg-mid: #03303a;
   --accent: #4cc3ff;
+  --grey: #c0c0c0;
 }
 
 *,
@@ -206,7 +207,7 @@ footer {
 }
 
 .menu-link a:hover {
-  background-color: #c0c0c0;
+  background-color: var(--grey);
   color: var(--bg-dark);
   cursor: pointer;
 }
@@ -286,6 +287,7 @@ main h2 {
 
 .links {
   margin-top: 10px;
+  margin-bottom: 30px;
 }
 
 .links_list {
@@ -298,19 +300,35 @@ main h2 {
 .links_list a {
   color: var(--accent);
   text-decoration: none;
-  border: 1px solid var(--accent);
+  border: 1px solid var(--grey);
   padding: 8px 16px;
   background-color: var(--bg-dark);
   transition: background-color 0.2s ease;
 }
 
 .links_list a:hover {
-  background-color: var(--accent);
+  background-color: var(--grey);
   color: var(--bg-dark);
 }
+
 .post-footer {
   height: 20px;
   flex-shrink: 0;
   width: 100%;
   background: transparent;
+}
+
+.canvas-wrapper {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  background-color: var(--bg-dark);
+  border: 1px solid var(--grey);
+  overflow: hidden;
+}
+
+#matrix {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
