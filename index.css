@@ -123,9 +123,10 @@ footer {
   flex-direction: column;
   /* min-height: 100vh; */
   margin-top: 20px;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   background-color: var(--bg-mid);
   font-family: 'LucidaConsole', monospace;
+  /* overflow-y: scroll; */
 }
 
 .header-top {
@@ -306,4 +307,10 @@ main h2 {
 .links_list a:hover {
   background-color: var(--accent);
   color: var(--bg-dark);
+}
+.post-footer {
+  height: 20px;
+  flex-shrink: 0;
+  width: 100%;
+  background: transparent;
 }
