@@ -8,22 +8,63 @@ fetch('header.html')
 
 const canvas = document.getElementById('matrix')
 const ctx = canvas.getContext('2d')
-const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890'.split('')
-let width = (canvas.width = window.innerWidth)
-let height = (canvas.height = window.innerHeight)
-const fontSize = 18
-const columns = Math.floor(width / fontSize)
 
-function draw() {
-  ctx.fillStyle = 'rgba(1, 23, 26, 0.1)'
-  ctx.fillRect(0, 0, width, height)
-  ctx.fillStyle = '#4cc3ff'
-  ctx.font = `${fontSize}px Lucida Console`
-  for (let i = 0; i < columns; i++) {
-    const char = letters[Math.floor(Math.random() * letters.length)]
-    ctx.fillText(char, i * fontSize, Math.random() * height)
-  }
-  requestAnimationFrame(draw)
+function resizeCanvas() {
+  canvas.width = canvas.clientWidth
+  canvas.height = canvas.clientHeight
 }
 
-draw()
+resizeCanvas()
+
+window.addEventListener('resize', resizeCanvas)
+
+const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890'.split('')
+const fontSize = 16
+let columns, rows
+let matrix = []
+
+// Создаём матрицу случайных символов
+function initMatrix() {
+  columns = Math.floor(canvas.width / fontSize)
+  rows = Math.floor(canvas.height / fontSize)
+  matrix = Array.from({ length: rows }, () =>
+    Array.from({ length: columns }, () => randomChar())
+  )
+}
+
+function randomChar() {
+  return letters[Math.floor(Math.random() * letters.length)]
+}
+
+// Обновляем случайные символы
+function updateMatrix() {
+  const updates = Math.floor(columns * rows * 0.05) // 5% символов на кадр
+  for (let i = 0; i < updates; i++) {
+    const r = Math.floor(Math.random() * rows)
+    const c = Math.floor(Math.random() * columns)
+    matrix[r][c] = randomChar()
+  }
+}
+
+function drawMatrix() {
+  ctx.fillStyle = 'rgba(1, 23, 26, 0.3)' // лёгкое затухание
+  ctx.fillRect(0, 0, canvas.width, canvas.height)
+
+  ctx.fillStyle = '#4cc3ff'
+  ctx.font = `${fontSize}px "PerfectDOS"`
+
+  for (let y = 0; y < rows; y++) {
+    for (let x = 0; x < columns; x++) {
+      ctx.fillText(matrix[y][x], x * fontSize, (y + 1) * fontSize)
+    }
+  }
+
+  updateMatrix()
+  requestAnimationFrame(drawMatrix)
+}
+
+// Ждём загрузки шрифта, чтобы текст не мигал системным
+document.fonts.load('16px "PerfectDOS"').then(() => {
+  initMatrix()
+  drawMatrix()
+})
