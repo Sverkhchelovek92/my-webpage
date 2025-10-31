@@ -83,6 +83,13 @@ const projectsDatabase = [
     img: '12_DV.png',
     gitlink: 'https://github.com/Sverkhchelovek92/Charts',
   },
+  {
+    id: 13,
+    name: 'Code Rain',
+    description: `Дождь из символов, как в фильме "Матрица"`,
+    img: '13_CR.png',
+    gitlink: 'https://github.com/Sverkhchelovek92/Coderain',
+  },
 ]
 
 export default projectsDatabase
