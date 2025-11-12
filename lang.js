@@ -22,3 +22,26 @@ const translations = {
     projects_link: 'Projects',
   },
 }
+
+function setLanguage(language) {
+  localStorage.setItem('language', language)
+
+  document.querySelectorAll('[data-i18n]').forEach((el) => {
+    const key = el.getAttribute('data-i18n')
+    if (translations[lang][key]) {
+      el.textContent = translations[lang][key]
+    }
+  })
+}
+
+document.querySelectorAll('.languages img').forEach((img) => {
+  img.addEventListener('click', () => {
+    const lang = img.dataset.lang
+    setLanguage(lang)
+  })
+})
+
+document.addEventListener('DOMContentLoaded', () => {
+  const savedLang = localStorage.getItem('lang') || 'en'
+  setLanguage(savedLang)
+})
