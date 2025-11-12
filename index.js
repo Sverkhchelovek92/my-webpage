@@ -4,6 +4,10 @@ fetch('header.html')
   .then((res) => res.text())
   .then((data) => {
     document.querySelector('.header').innerHTML = data
+
+    if (window.initLang) {
+      window.initLang()
+    }
   })
 
 const canvas = document.getElementById('matrix')

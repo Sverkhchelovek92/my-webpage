@@ -23,8 +23,8 @@ const translations = {
   },
 }
 
-function setLanguage(language) {
-  localStorage.setItem('language', language)
+function setLanguage(lang) {
+  localStorage.setItem('lang', lang)
 
   document.querySelectorAll('[data-i18n]').forEach((el) => {
     const key = el.getAttribute('data-i18n')
@@ -34,14 +34,16 @@ function setLanguage(language) {
   })
 }
 
-document.querySelectorAll('.languages img').forEach((img) => {
-  img.addEventListener('click', () => {
-    const lang = img.dataset.lang
-    setLanguage(lang)
-  })
-})
-
-document.addEventListener('DOMContentLoaded', () => {
+function initLang() {
   const savedLang = localStorage.getItem('lang') || 'en'
   setLanguage(savedLang)
-})
+
+  const flags = document.querySelectorAll('.languages img')
+  flags.forEach((img) => {
+    img.addEventListener('click', () => {
+      setLanguage(img.dataset.lang)
+    })
+  })
+}
+
+window.initLang = initLang
