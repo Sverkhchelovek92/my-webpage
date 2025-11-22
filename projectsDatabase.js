@@ -90,6 +90,13 @@ const projectsDatabase = [
     img: '13_CR.png',
     gitlink: 'https://github.com/Sverkhchelovek92/Coderain',
   },
+  {
+    id: 14,
+    name: 'Cards',
+    description: 'Просто приложение, которое предсказывает будущее по картам',
+    img: '14_C.png',
+    gitlink: 'https://github.com/Sverkhchelovek92/Cards',
+  },
 ]
 
 export default projectsDatabase

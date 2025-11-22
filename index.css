@@ -227,6 +227,7 @@ main {
 h1 {
   font-size: 20px;
   margin: 10px;
+  font-family: 'Terminus', monospace;
 }
 
 .project-card {
