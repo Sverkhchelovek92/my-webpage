@@ -93,9 +93,16 @@ const projectsDatabase = [
   {
     id: 14,
     name: 'Cards',
-    description: 'Просто приложение, которое предсказывает будущее по картам',
+    description: 'Простое приложение, которое предсказывает будущее по картам',
     img: '14_C.png',
     gitlink: 'https://github.com/Sverkhchelovek92/Cards',
+  },
+  {
+    id: 15,
+    name: 'Currency Converter',
+    description: 'Простой конвертер валют, написанный на TypeScript',
+    img: '15_C.png',
+    gitlink: 'https://github.com/Sverkhchelovek92/Currency-Converter',
   },
 ]
 
