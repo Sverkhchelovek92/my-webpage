@@ -104,6 +104,13 @@ const projectsDatabase = [
     img: '15_C.png',
     gitlink: 'https://github.com/Sverkhchelovek92/Currency-Converter',
   },
+  {
+    id: 16,
+    name: 'Raytracer',
+    description: '2D симулятор трассировки лучей',
+    img: '16_R.png',
+    gitlink: 'https://github.com/Sverkhchelovek92/Raytracer',
+  },
 ]
 
 export default projectsDatabase
