@@ -23,6 +23,8 @@ const translations = {
   },
 }
 
+let currentLang = 'en'
+
 function setLanguage(lang) {
   localStorage.setItem('lang', lang)
 
@@ -32,6 +34,10 @@ function setLanguage(lang) {
       el.textContent = translations[lang][key]
     }
   })
+
+  if (typeof window.renderProjects === 'function') {
+    window.renderProjects(lang)
+  }
 }
 
 function initLang() {
