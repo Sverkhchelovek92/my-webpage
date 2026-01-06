@@ -4,7 +4,7 @@ const translations = {
     subtitle: 'JavaScript разработчик',
     about_title: 'Обо мне',
     about_text: 'Привет, меня зовут Мирослав, я фронтенд-разработчик.',
-    links_title: 'Ссылки',
+    links_title: 'Связаться со мной:',
     projects_title: 'Мои проекты',
 
     about_link: 'Обо мне',
@@ -16,7 +16,7 @@ const translations = {
     about_title: 'About Me',
     about_text:
       'Hello, my name is Miroslav and I am front-end javascript developer.',
-    links_title: 'Links',
+    links_title: 'Contacts:',
     projects_title: 'My projects',
     about_link: 'About',
     projects_link: 'Projects',
