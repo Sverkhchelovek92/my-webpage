@@ -8,7 +8,31 @@ fetch('header.html')
     if (window.initLang) {
       window.initLang()
     }
+
+    highlightActiveMenuLink()
   })
+
+function highlightActiveMenuLink() {
+  const currentPage = window.location.pathname.split('/').pop() || 'index.html'
+
+  document.querySelectorAll('.menu-link a').forEach((link) => {
+    const linkPage = link.getAttribute('href')
+
+    if (linkPage === currentPage) {
+      link.classList.add('active')
+    } else {
+      link.classList.remove('active')
+    }
+  })
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  highlightActiveMenuLink()
+
+  if (typeof initLang === 'function') {
+    initLang()
+  }
+})
 
 const canvas = document.getElementById('matrix')
 const ctx = canvas.getContext('2d')

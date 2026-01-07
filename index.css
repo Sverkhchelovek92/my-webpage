@@ -220,6 +220,11 @@ footer {
   cursor: pointer;
 }
 
+.menu-link a.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
 main {
   flex-grow: 1;
 }
