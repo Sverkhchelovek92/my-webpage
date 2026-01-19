@@ -242,6 +242,21 @@ const projectsDatabase = [
       },
     },
   },
+  {
+    id: 17,
+    img: '17_S.png',
+    gitlink: 'https://github.com/Sverkhchelovek92/Falling-sand',
+    i18n: {
+      ru: {
+        name: 'Falling Sand',
+        description: 'Симулятор падающего песка',
+      },
+      en: {
+        name: 'Falling Sand',
+        description: 'Falling sand simulator',
+      },
+    },
+  },
 ]
 
 export default projectsDatabase
