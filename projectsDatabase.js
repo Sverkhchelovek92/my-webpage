@@ -14,21 +14,21 @@ const projectsDatabase = [
       },
     },
   },
-  {
-    id: 2,
-    img: '02_F.png',
-    gitlink: 'https://github.com/Sverkhchelovek92/Filament-Web',
-    i18n: {
-      ru: {
-        name: 'Filament',
-        description: 'Веб-сайт для видеопродакшена',
-      },
-      en: {
-        name: 'Filament',
-        description: 'Website for a video production company',
-      },
-    },
-  },
+  // {
+  //   id: 2,
+  //   img: '02_F.png',
+  //   gitlink: 'https://github.com/Sverkhchelovek92/Filament-Web',
+  //   i18n: {
+  //     ru: {
+  //       name: 'Filament',
+  //       description: 'Веб-сайт для видеопродакшена',
+  //     },
+  //     en: {
+  //       name: 'Filament',
+  //       description: 'Website for a video production company',
+  //     },
+  //   },
+  // },
   {
     id: 3,
     img: '03_CB.png',
@@ -254,6 +254,21 @@ const projectsDatabase = [
       en: {
         name: 'Falling Sand',
         description: 'Falling sand simulator',
+      },
+    },
+  },
+  {
+    id: 18,
+    img: '18_M.png',
+    gitlink: 'https://github.com/Sverkhchelovek92/Metaballs',
+    i18n: {
+      ru: {
+        name: 'Metaballs',
+        description: 'Простой симулятор 2D меташаров',
+      },
+      en: {
+        name: 'Metaballs',
+        description: 'Simple 2D metaballs simulator',
       },
     },
   },
