@@ -272,6 +272,22 @@ const projectsDatabase = [
       },
     },
   },
+  {
+    id: 19,
+    img: '19_PC.png',
+    gitlink: 'https://github.com/Sverkhchelovek92/PackCrop',
+    i18n: {
+      ru: {
+        name: 'PackCrop',
+        description:
+          'Приложение, чтобы одинаково обрезать несколько фотографий',
+      },
+      en: {
+        name: 'PackCrop',
+        description: 'An app for cropping multiple photos the same way',
+      },
+    },
+  },
 ]
 
 export default projectsDatabase
