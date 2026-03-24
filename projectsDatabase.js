@@ -288,6 +288,22 @@ const projectsDatabase = [
       },
     },
   },
+  {
+    id: 20,
+    img: '20_A.png',
+    gitlink: 'https://github.com/Sverkhchelovek92/ampwin',
+    i18n: {
+      ru: {
+        name: 'AmpWin',
+        description:
+          'Плеер для проигрывания музыки, вдохновленный классическим WinAmp',
+      },
+      en: {
+        name: 'AmpWin',
+        description: 'The music player inspired by WinAmp!',
+      },
+    },
+  },
 ]
 
 export default projectsDatabase
